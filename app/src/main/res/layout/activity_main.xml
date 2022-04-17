@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/tv_no_of_questions"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:gravity="center"
+        android:text="Number Of Questions"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tv_question"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_no_of_questions"
+        android:gravity="center"
+        android:paddingTop="10dp"
+        android:text="Question"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="18sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_question"
+        android:orientation="vertical"
+        android:layout_marginTop="50dp">
+
+        <Button
+            android:id="@+id/btn_option1"
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            android:backgroundTint="#F44336"
+            tools:ignore="SpeakableTextPresentCheck"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            android:layout_marginTop="20dp"
+            android:backgroundTint="@color/purple_700"
+            tools:ignore="SpeakableTextPresentCheck"
+            android:id="@+id/btn_option2"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            android:layout_marginTop="20dp"
+            android:backgroundTint="#FFEB3B"
+            tools:ignore="SpeakableTextPresentCheck"
+            android:id="@+id/btn_option3"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            android:layout_marginTop="20dp"
+            android:backgroundTint="@color/black"
+            tools:ignore="SpeakableTextPresentCheck"
+            android:id="@+id/btn_option4"/>
+
+    </LinearLayout>
+
+</RelativeLayout>
